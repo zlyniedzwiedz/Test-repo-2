@@ -13,7 +13,9 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #00ff62;
+}
+.navbar-name {
+  color: #39e6dd;
 }
 
 .navbutton {
@@ -50,7 +52,7 @@ a {
 .navbar-name {
   font-size: 36px;
   padding-left: 50px;
-  transform: rotate(15deg);
+  transform: rotate(15deg) scale(1.5);
 }
 
 @media screen and (max-width: 900px) {
@@ -203,6 +205,14 @@ body {
 #contact-list {
   list-style: none;
   font-size: 30px;
+}
+
+.skills-list {
+  list-style-image: url(/images/viking-icon.png);
+}
+
+.skills-list-element:hover {
+  color: rgb(241, 241, 210);
 }
 
 @media screen and (max-width: 900px) {

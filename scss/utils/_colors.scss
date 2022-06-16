@@ -4,6 +4,7 @@ $backgroundElements: #000000;
 $buttonBackground: #00000000;
 $buttonHover: #67796759;
 $buttonHoverOnClick: #589ab4;
+$navbarName: #39e6dd;
 
 body {
     color: $primaryText;
@@ -22,8 +23,13 @@ body {
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: $primaryText;
+
+    //color of the name //
+    &-name {
+        color: $navbarName;
+    }
 }
 
 .navbutton {
@@ -34,4 +40,3 @@ body {
 a {
     color: $primaryText;
 }
-
