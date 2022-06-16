@@ -1,0 +1,82 @@
+body {
+  color: #00ff62;
+  background: #0f0c29;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #00ff62;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #00ff62;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 100px;
+  padding: 0px 15px 0 15px;
+  position: fixed;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-right: 5px;
+  align-items: center;
+}
+.navbar-element {
+  margin-left: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.navbar-core {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .name {
+  font-size: 36px;
+}
+
+.button {
+  position: relative;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(103, 121, 103, 0.3490196078);
+  border-radius: 6px;
+}
+.button:after {
+  content: "";
+  background: #589ab4;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -40px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+  border-radius: 6px;
+}
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}/*# sourceMappingURL=main.css.map */
