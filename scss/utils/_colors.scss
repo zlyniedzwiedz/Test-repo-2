@@ -5,7 +5,9 @@ $buttonBackground: #00000000;
 $buttonHover: #687a6859;
 $buttonHoverOnClick: #589ab4;
 $navbarName: #39e6dd;
-$backgroundImage: url(images/bear-pawprint-svgrepo-com.svg);
+$backgroundImage: url(/images/bear-pawprint-svgrepo-com.svg);
+$footerText: #00aeff56;
+$footerBackground: #00aeff09;
 
 body {
     color: $primaryText;
@@ -50,4 +52,9 @@ body {
 
 a {
     color: $primaryText;
+}
+
+.footer {
+    color: $footerText;
+    background-color: $footerBackground
 }

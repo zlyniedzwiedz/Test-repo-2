@@ -33,6 +33,11 @@ a {
   color: #00ff62;
 }
 
+.footer {
+  color: rgba(0, 174, 255, 0.337254902);
+  background-color: rgba(0, 174, 255, 0.0352941176);
+}
+
 .navbar {
   position: absolute;
   display: flex;
@@ -225,8 +230,8 @@ body {
 }
 
 .skills-list-element {
-  list-style-image: url(/images/viking-icon.png);
-  font-size: 24px;
+  list-style-type: none;
+  font-size: 28px;
 }
 
 .skills-list-element:hover {
