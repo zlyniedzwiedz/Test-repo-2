@@ -72,9 +72,10 @@ body {
     //skills list//
 
 }
-
-.skills-list {
+.skills-list,
+.skills-list-element {
     list-style-image: url(/images/viking-icon.png);
+    font-size: 24px;
 
 }
 
