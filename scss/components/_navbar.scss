@@ -24,8 +24,31 @@
     }
 
     .name {
-
+        display: block;
         font-size: 36px;
+        width: max-content;
     }
+
+}
+@media screen and  (max-width: 900px) {
+    .navbar {
+        width: 150px;
+        height: 100%;
+        float: left;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: max-content;
+
+    &-core {
+        flex-direction: column;
+    }
+    }
+    .navbutton {
+        text-align: left;
+    }
+
+
+    
+
 
 }

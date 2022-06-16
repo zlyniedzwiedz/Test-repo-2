@@ -42,9 +42,32 @@ body {
   justify-content: space-around;
 }
 .navbar .name {
+  display: block;
   font-size: 36px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
+@media screen and (max-width: 900px) {
+  .navbar {
+    width: 150px;
+    height: 100%;
+    float: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .navbar-core {
+    flex-direction: column;
+  }
+
+  .navbutton {
+    text-align: left;
+  }
+}
 .navbutton {
   position: relative;
   border: none;
