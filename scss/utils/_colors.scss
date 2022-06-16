@@ -39,6 +39,9 @@ body {
     &:hover {
         background-color: $buttOnHover;
     }
+        &:after {
+            background: $buttonHoverOnClick;
+        }
 }
 
 a {
