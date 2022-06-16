@@ -21,6 +21,10 @@ body {
   color: #00ff62;
 }
 
+a {
+  color: #00ff62;
+}
+
 .navbar {
   position: absolute;
   display: flex;
@@ -45,6 +49,8 @@ body {
 }
 .navbar-name {
   font-size: 36px;
+  padding-left: 50px;
+  transform: rotate(15deg);
 }
 
 @media screen and (max-width: 900px) {
@@ -106,6 +112,45 @@ body {
   border-radius: 6px;
 }
 
+.link-button {
+  position: relative;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 25px;
+}
+.link-button:hover {
+  background-color: rgba(103, 121, 103, 0.3490196078);
+  border-radius: 10px;
+  transform: rotate(5deg) scale(1.2);
+}
+.link-button:after {
+  content: "";
+  background: #589ab4;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -40px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.6s;
+  border-radius: 6px;
+}
+.link-button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+  border-radius: 6px;
+}
+
 body {
   display: flex;
   position: relative;
@@ -129,6 +174,32 @@ body {
 }
 .main-header {
   font-size: 2rem;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+#contact-list {
+  list-style: none;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 900px) {
