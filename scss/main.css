@@ -22,6 +22,7 @@ body {
 }
 
 .navbar {
+  position: absolute;
   display: flex;
   flex-direction: row;
   width: 98%;
@@ -32,6 +33,7 @@ body {
   justify-content: space-between;
   margin-right: 5px;
   align-items: center;
+  z-index: 3;
 }
 .navbar-element {
   border: 1px solid transparent;
@@ -51,7 +53,7 @@ body {
     height: 100%;
     float: left;
     flex-direction: column;
-    width: 25vw;
+    width: 25%;
     padding: 0;
     justify-content: flex-start;
   }
@@ -102,4 +104,41 @@ body {
   opacity: 1;
   transition: 0s;
   border-radius: 6px;
+}
+
+body {
+  display: flex;
+  position: relative;
+}
+
+.main {
+  position: absolute;
+  display: flex;
+  margin-top: 150px;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 15px;
+  z-index: 1;
+}
+.main-content {
+  margin-left: 50px;
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+.main-header {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    display: flex;
+    justify-content: space-around;
+    max-width: 75%;
+    margin-left: 25%;
+  }
+}
+* {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=main.css.map */

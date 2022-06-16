@@ -1,5 +1,5 @@
 .navbar {
-
+    position: absolute;
     display: flex;
     flex-direction: row;
     width: 98%;
@@ -10,6 +10,7 @@
     justify-content: space-between;
     margin-right: 5px;
     align-items: center;
+    z-index: 3;
 
     &-element {
 
@@ -36,7 +37,7 @@
         height: 100%;
         float: left;
         flex-direction: column;
-        width: 25vw;
+        width: 25%;
         padding: 0;
         justify-content: flex-start;
 
