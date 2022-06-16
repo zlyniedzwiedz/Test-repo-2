@@ -1,4 +1,4 @@
-.button {
+.navbutton {
     position: relative;
     border: none;
     padding: 15px 32px;
@@ -14,6 +14,7 @@
     &:hover {
         background-color: $buttonHover;
         border-radius: 6px;
+        transform: rotate(5deg) scale(1.2);
 
 
     }
