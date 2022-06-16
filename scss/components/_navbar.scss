@@ -4,7 +4,7 @@
     flex-direction: row;
     width: 98%;
     height: 100px;
-    padding: 0px 15px 0 15px;
+    padding: 15px;
     position: fixed;
     border-radius: 10px;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     &-element {
 
         border: 1px solid transparent;
-        border-radius: 4px;
+        border-radius: 6px;
 
     }
 
@@ -38,23 +38,23 @@
         flex-direction: column;
         width: 25vw;
         padding: 0;
-       justify-content: flex-start;
-        
-        
+        justify-content: flex-start;
+
+
 
 
         &-core {
             flex-direction: column;
-           
+
         }
 
         &-name {
             font-size: 1em;
-    }
+        }
 
-    .navbutton {
-        font-size: 0.8em;
-        text-align: left;
+        .navbutton {
+            font-size: 0.8em;
+            text-align: left;
 
 
 
