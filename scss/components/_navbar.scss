@@ -12,7 +12,7 @@
     align-items: center;
 
     &-element {
-        
+
         border: 1px solid transparent;
         border-radius: 4px;
 
@@ -23,32 +23,46 @@
         justify-content: space-around;
     }
 
-    .name {
-        display: block;
+    &-name {
         font-size: 36px;
-        width: max-content;
+
     }
 
 }
-@media screen and  (max-width: 900px) {
+
+@media screen and (max-width: 900px) {
     .navbar {
-        width: 150px;
+        display: flex;
         height: 100%;
         float: left;
         flex-direction: column;
-        justify-content: flex-start;
-        width: max-content;
+        width: 25vw;
+        padding: 0;
+       justify-content: flex-start;
+        
+        
 
-    &-core {
-        flex-direction: column;
+
+        &-core {
+            flex-direction: column;
+           
+        }
+
+        &-name {
+            font-size: 1em;
     }
-    }
+
     .navbutton {
+        font-size: 0.8em;
         text-align: left;
+
+
+
+        }
     }
 
 
-    
+
 
 
 }

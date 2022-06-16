@@ -41,30 +41,28 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.navbar .name {
-  display: block;
+.navbar-name {
   font-size: 36px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 @media screen and (max-width: 900px) {
   .navbar {
-    width: 150px;
+    display: flex;
     height: 100%;
     float: left;
     flex-direction: column;
+    width: 25vw;
+    padding: 0;
     justify-content: flex-start;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   .navbar-core {
     flex-direction: column;
   }
-
-  .navbutton {
+  .navbar-name {
+    font-size: 1em;
+  }
+  .navbar .navbutton {
+    font-size: 0.8em;
     text-align: left;
   }
 }
