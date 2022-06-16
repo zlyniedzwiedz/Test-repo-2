@@ -22,6 +22,9 @@ body {
   background-color: rgba(0, 0, 0, 0);
   color: #00ff62;
 }
+.navbutton:hover {
+  background-color: rgba(103, 121, 103, 0.3490196078);
+}
 
 a {
   color: #00ff62;
@@ -89,7 +92,6 @@ a {
   border-radius: 50px;
 }
 .navbutton:hover {
-  background-color: rgba(103, 121, 103, 0.3490196078);
   border-radius: 10px;
   transform: rotate(5deg) scale(1.2);
 }

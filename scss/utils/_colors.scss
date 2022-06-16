@@ -2,7 +2,7 @@ $primaryText: #00ff62;
 $backgroundMain: rgba(85, 85, 85, 0.63);
 $backgroundElements: #000000;
 $buttonBackground: #00000000;
-$buttonHover: #67796759;
+$buttOnHover: #67796759;
 $buttonHoverOnClick: #589ab4;
 $navbarName: #39e6dd;
 
@@ -35,6 +35,10 @@ body {
 .navbutton {
     background-color: $buttonBackground ;
     color: $primaryText;
+
+    &:hover {
+        background-color: $buttOnHover;
+    }
 }
 
 a {
