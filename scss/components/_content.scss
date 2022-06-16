@@ -44,8 +44,13 @@ body {
 }
 
 .footer {
-    display: flex;
-    align-items: flex-end;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    margin-top: 25px;
+
+
 }
 
 .contact-link {
