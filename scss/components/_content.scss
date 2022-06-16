@@ -2,6 +2,8 @@ body {
     display: flex;
     position: relative;
 
+
+
 }
 
 // Main content //
@@ -15,14 +17,21 @@ body {
     margin-right: 5%;
     padding: 15px;
     z-index: 1;
+    background-image: url(/images/bear-pawprint-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center;
+
 
 
 
     &-content {
         margin-left: 50px;
-
         font-size: 1.5rem;
         max-width: 100%;
+
+
+
     }
 
     &-header {

@@ -2,9 +2,10 @@ $primaryText: #00ff62;
 $backgroundMain: rgba(85, 85, 85, 0.63);
 $backgroundElements: #000000;
 $buttonBackground: #00000000;
-$buttOnHover: #67796759;
+$buttonHover: #687a6859;
 $buttonHoverOnClick: #589ab4;
 $navbarName: #39e6dd;
+$backgroundImage: url(images/bear-pawprint-svgrepo-com.svg);
 
 body {
     color: $primaryText;
@@ -26,6 +27,8 @@ body {
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
+
     //color of the name //
     &-name {
         color: $navbarName;
@@ -37,11 +40,12 @@ body {
     color: $primaryText;
 
     &:hover {
-        background-color: $buttOnHover;
+        background-color: $buttonHover;
     }
-        &:after {
-            background: $buttonHoverOnClick;
-        }
+
+    &:after {
+        background: $buttonHoverOnClick;
+    }
 }
 
 a {

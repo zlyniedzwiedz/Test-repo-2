@@ -23,7 +23,10 @@ body {
   color: #00ff62;
 }
 .navbutton:hover {
-  background-color: rgba(103, 121, 103, 0.3490196078);
+  background-color: rgba(104, 122, 104, 0.3490196078);
+}
+.navbutton:after {
+  background: #589ab4;
 }
 
 a {
@@ -56,6 +59,15 @@ a {
   font-size: 36px;
   padding-left: 50px;
   transform: rotate(15deg) scale(1.5);
+}
+.navbar-logo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-image: url(/images/bear-pawprint-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: right;
 }
 
 @media screen and (max-width: 900px) {
@@ -97,7 +109,6 @@ a {
 }
 .navbutton:after {
   content: "";
-  background: #589ab4;
   display: block;
   position: absolute;
   padding-top: 300%;
@@ -130,7 +141,7 @@ a {
   margin-top: 25px;
 }
 .link-button:hover {
-  background-color: rgba(103, 121, 103, 0.3490196078);
+  background-color: rgba(104, 122, 104, 0.3490196078);
   border-radius: 10px;
   transform: rotate(5deg) scale(1.2);
 }
@@ -170,6 +181,10 @@ body {
   margin-right: 5%;
   padding: 15px;
   z-index: 1;
+  background-image: url(/images/bear-pawprint-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: center;
 }
 .main-content {
   margin-left: 50px;
