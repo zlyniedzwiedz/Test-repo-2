@@ -266,6 +266,46 @@ body {
     margin-left: 25%;
   }
 }
+.animationDisplayBlock {
+  -webkit-animation: smoothDisplayBlock 1s linear forwards;
+          animation: smoothDisplayBlock 1s linear forwards;
+}
+
+/*You should set the width and height according to the size of your element*/
+@-webkit-keyframes smoothDisplayBlock {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes smoothDisplayBlock {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   scroll-behavior: smooth;
 }/*# sourceMappingURL=main.css.map */
