@@ -19,14 +19,22 @@ body {
 }
 
 .navbutton {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.1843137255);
   color: rgba(255, 255, 255, 0.5137254902);
 }
 .navbutton:hover {
-  background-color: rgba(104, 122, 104, 0.3490196078);
+  background-color: rgba(116, 116, 116, 0.3490196078);
 }
 .navbutton:after {
   background: #589ab4;
+}
+
+.link-button {
+  background-color: rgba(0, 0, 0, 0.1843137255);
+  color: rgba(255, 255, 255, 0.5137254902);
+}
+.link-button:hover {
+  background-color: rgba(116, 116, 116, 0.3490196078);
 }
 
 a {
@@ -164,7 +172,6 @@ a {
 }
 .link-button:after {
   content: "";
-  background: #589ab4;
   display: block;
   position: absolute;
   padding-top: 300%;
@@ -186,7 +193,7 @@ a {
 body {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 98%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }

@@ -1,8 +1,8 @@
 $primaryText: #ffffff83;
 $backgroundMain: rgba(85, 85, 85, 0.63);
 $backgroundElements: #000000;
-$buttonBackground: #00000000;
-$buttonHover: #687a6859;
+$buttonBackground: #0000002f;
+$buttonHover: #74747459;
 $buttonHoverOnClick: #589ab4;
 $navbarName: #ffffffad;
 $backgroundImage: url(/images/bear-pawprint-svgrepo-com.svg);
@@ -46,6 +46,14 @@ body {
 
     &:after {
         background: $buttonHoverOnClick;
+    }
+}
+.link-button {
+    background-color: $buttonBackground;
+    color: $primaryText;
+
+    &:hover {
+        background-color: $buttonHover;
     }
 }
 
