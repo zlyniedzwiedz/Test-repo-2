@@ -86,6 +86,10 @@ a {
   height: 150px;
   transform: translateY(50px) translateX(150px);
 }
+.navbar .logo:hover {
+  transition-duration: 0.5s;
+  transform: translateY(50px) translateX(150px) scale(1.2);
+}
 
 @media screen and (max-width: 900px) {
   .navbar {

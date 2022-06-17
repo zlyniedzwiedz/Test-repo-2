@@ -50,6 +50,11 @@
         width: 150px;
         height: 150px;
         transform: translateY(50px) translateX(150px);
+    
+        &:hover {
+            transition-duration: 0.5s;
+            transform: translateY(50px) translateX(150px) scale(1.2);
+        }
 
     }
 
