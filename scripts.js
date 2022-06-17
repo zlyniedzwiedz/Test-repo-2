@@ -1,3 +1,4 @@
+// This script reveals content after scroll down //
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -16,4 +17,7 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// This script reveals content after scroll down //
+
+
+// This changes content on button press//
+
