@@ -1,32 +1,31 @@
-$primaryText: #00ff62;
+$primaryText: #ffffff83;
 $backgroundMain: rgba(85, 85, 85, 0.63);
 $backgroundElements: #000000;
 $buttonBackground: #00000000;
 $buttonHover: #687a6859;
 $buttonHoverOnClick: #589ab4;
-$navbarName: #39e6dd;
+$navbarName: #ffffffad;
 $backgroundImage: url(/images/bear-pawprint-svgrepo-com.svg);
 $footerText: #00aeff56;
 $footerBackground: #00aeff09;
 
 body {
     color: $primaryText;
-    background: #0f0c29;
+    background: #232526;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: -webkit-linear-gradient(to left, #414345, #232526);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to left, #414345, #232526);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
 .navbar {
-    background: #0F2027;
+    background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: -webkit-linear-gradient(to right, #434343, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-
+    background: linear-gradient(to right, #434343, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 

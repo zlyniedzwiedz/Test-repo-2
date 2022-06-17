@@ -1,26 +1,26 @@
 body {
-  color: #00ff62;
-  background: #0f0c29;
+  color: rgba(255, 255, 255, 0.5137254902);
+  background: #232526;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to left, #414345, #232526);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar {
-  background: #0F2027;
+  background: #000000;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #434343, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbar-name {
-  color: #39e6dd;
+  color: rgba(255, 255, 255, 0.6784313725);
 }
 
 .navbutton {
   background-color: rgba(0, 0, 0, 0);
-  color: #00ff62;
+  color: rgba(255, 255, 255, 0.5137254902);
 }
 .navbutton:hover {
   background-color: rgba(104, 122, 104, 0.3490196078);
@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  color: #00ff62;
+  color: rgba(255, 255, 255, 0.5137254902);
 }
 
 .footer {
@@ -65,7 +65,7 @@ a {
   font-size: 36px;
   padding-left: 50px;
   padding-top: 50px;
-  transform: rotate(15deg) scale(1.5);
+  transform: rotate(15deg) scale(1.5) translateX(10px);
 }
 .navbar-logo {
   display: flex;
@@ -187,6 +187,8 @@ body {
   display: flex;
   position: relative;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .main {
