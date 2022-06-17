@@ -31,24 +31,25 @@
 
     //name/icon on the navbar //
     &-name {
+        position: absolute;
         font-size: 36px;
         padding-left: 50px;
+        padding-top: 50px;
         transform: rotate(15deg) scale(1.5);
-       
+
     }
 
     &-logo {
         display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        background-image: url(/images/bear-pawprint-svgrepo-com.svg);
-        background-repeat: no-repeat;
-        background-size: 100px;
-        background-position: right;
+        height: 200px;
+    }
 
-
-
-
+    .logo {
+        position: relative;
+        z-index: -2;
+        width: 150px;
+        height: 150px;
+        transform: translateY(50px) translateX(150px);
 
     }
 
@@ -78,8 +79,19 @@
 
         }
 
+        &-logo {
+            height: 100px;
+        }
+
         &-name {
             font-size: 1em;
+            position: static;
+            padding-left: 20px;
+            padding-top: 20px
+        }
+
+        .logo {
+            display: none;
         }
 
         .navbutton {

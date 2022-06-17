@@ -61,18 +61,22 @@ a {
   justify-content: space-around;
 }
 .navbar-name {
+  position: absolute;
   font-size: 36px;
   padding-left: 50px;
+  padding-top: 50px;
   transform: rotate(15deg) scale(1.5);
 }
 .navbar-logo {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  background-image: url(/images/bear-pawprint-svgrepo-com.svg);
-  background-repeat: no-repeat;
-  background-size: 100px;
-  background-position: right;
+  height: 200px;
+}
+.navbar .logo {
+  position: relative;
+  z-index: -2;
+  width: 150px;
+  height: 150px;
+  transform: translateY(50px) translateX(150px);
 }
 
 @media screen and (max-width: 900px) {
@@ -88,8 +92,17 @@ a {
   .navbar-core {
     flex-direction: column;
   }
+  .navbar-logo {
+    height: 100px;
+  }
   .navbar-name {
     font-size: 1em;
+    position: static;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .navbar .logo {
+    display: none;
   }
   .navbar .navbutton {
     font-size: 0.8em;
@@ -173,6 +186,7 @@ a {
 body {
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 .main {
