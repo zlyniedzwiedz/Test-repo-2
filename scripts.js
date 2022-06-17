@@ -19,34 +19,18 @@ window.addEventListener("scroll", reveal);
 
 // This changes content on button press//
 
+// New page change script//
+const def_page = "home";
+let new_page = "";
+let old_page = "";
 function init() {
-  document.getElementById("home").style.display = "block";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("contact").style.display = "none";
+  document.getElementById(def_page).style.display = "block";
+  old_page = def_page;
 }
-function showHome() {
-  console.log("btn1");
-  document.getElementById("home").style.display = "block";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("contact").style.display = "none";
-}
-function showAbout() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("about").style.display = "block";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("contact").style.display = "none";
-}
-function showSkills() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("skills").style.display = "block";
-  document.getElementById("contact").style.display = "none";
-}
-function showContact() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("contact").style.display = "block";
+function shw_page(new_page) {
+  if (old_page) {
+    document.getElementById(old_page).style.display = "none";
+  }
+  document.getElementById(new_page).style.display = "block";
+  old_page = new_page;
 }

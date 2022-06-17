@@ -22,20 +22,21 @@
             <h2 class="navbar-name">Michał Raszczyk</h2>
         </div>
         <div class="navbar-core">
-            <div class="navbar-element"><button class="navbutton" type="button" onclick="showHome()">Home</button>
+            <div class="navbar-element"><button class="navbutton" type="button" onclick="shw_page('home')">Home</button>
             </div>
-            <div class="navbar-element"><button class="navbutton" type="button" onclick="showAbout()"> O mnie
+            <div class="navbar-element"><button class="navbutton" type="button" onclick="shw_page('about')"> O mnie
                 </button></div>
-            <div class="navbar-element"><button class="navbutton" type="button" onclick="showSkills()">Zestaw
+            <div class="navbar-element"><button class="navbutton" type="button" onclick="shw_page('skills')">Zestaw
                     umiejętności</button></div>
-            <div class="navbar-element"><button class="navbutton" type="button" onclick="showContact()">Kontakt</button>
+            <div class="navbar-element"><button class="navbutton" type="button"
+                    onclick="shw_page('contact')">Kontakt</button>
             </div>
         </div>
     </nav>
 
 
 
-    <section class="main" id="home">
+    <section class="main" style="display: none" id="home">
         <h2 class="main-header">Witam</h2>
         <p class="main-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ab saepe
             soluta. Hic perferendis eos illo ipsum quibusdam cupiditate optio repellendus omnis possimus doloremque
@@ -86,7 +87,7 @@
 
     </section>
 
-    <section class="main" id="about">
+    <section class="main" style="display: none" id="about">
         <h2 class="main-header">O mnie</h2>
         <p class="main-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ab saepe
             soluta. Hic perferendis eos illo ipsum quibusdam cupiditate optio repellendus omnis possimus doloremque
@@ -137,7 +138,7 @@
         </p>
     </section>
 
-    <section class="main" id="skills">
+    <section class="main" style="display: none" id="skills">
         <h2 class="main-header">Zestaw moich umiejętności:</h2>
         <p class="main-content">
         <ul class="skills-list">
@@ -152,7 +153,7 @@
 
     </section>
 
-    <section class="main" id="contact">
+    <section class="main" style="display: none" id="contact">
         <h2 class="main-header">Kontakt</h2>
         <div class="main-content">
             <ul id="contact-list">
