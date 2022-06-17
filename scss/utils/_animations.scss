@@ -1,0 +1,26 @@
+    .animationDisplayBlock {
+        animation: smoothDisplayBlock 0.5s linear forwards;
+    }
+
+    /*You should set the width and height according to the size of your element*/
+    @keyframes smoothDisplayBlock {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }

@@ -17,9 +17,7 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// This changes content on button press//
-
-// New page change script//
+// Page Switching// // Page FadeIn animation //
 const def_page = "home";
 let new_page = "";
 let old_page = "";
@@ -29,8 +27,11 @@ function init() {
 }
 function shw_page(new_page) {
   if (old_page) {
+    document.getElementById(old_page).classList.remove("animationDisplayBlock");
     document.getElementById(old_page).style.display = "none";
   }
   document.getElementById(new_page).style.display = "block";
+  document.getElementById(new_page).classList.add("animationDisplayBlock");
+
   old_page = new_page;
 }
