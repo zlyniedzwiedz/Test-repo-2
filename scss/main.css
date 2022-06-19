@@ -17,6 +17,12 @@ body {
 .navbar-name {
   color: rgba(255, 255, 255, 0.6784313725);
 }
+.navbar-secondary-name {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 8%, rgb(0, 0, 0) 25%, rgba(1, 79, 118, 0.7763480392) 41%, rgba(1, 112, 152, 0.3953956583) 71%, rgb(150, 150, 150) 100%);
+  -webkit-background-clip: text;
+  background-clip: tex;
+  -webkit-text-fill-color: transparent;
+}
 
 .navbutton {
   background-color: rgba(0, 0, 0, 0.1843137255);
@@ -88,6 +94,9 @@ a {
   padding-left: 50px;
   padding-top: 50px;
   transform: rotate(15deg) scale(1.5) translateX(10px);
+}
+.navbar-secondary-name {
+  font-size: 36px;
 }
 .navbar-logotype {
   display: flex;

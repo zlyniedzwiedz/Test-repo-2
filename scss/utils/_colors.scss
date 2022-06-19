@@ -10,6 +10,9 @@ $footerText: #00aeff56;
 $footerBackground: #00aeff09;
 $buttonBackgroundMobile: rgba(0, 0, 0, 0);
 
+$secondaryNavbarNameColor: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgb(0, 0, 0) 25%, rgba(1, 79, 118, 0.7763480392156863) 41%,
+        rgba(1, 112, 152, 0.39539565826330536) 71%, rgb(150, 150, 150) 100%);
+
 body {
     color: $primaryText;
     background: #232526;
@@ -34,6 +37,13 @@ body {
     //color of the name //
     &-name {
         color: $navbarName;
+    }
+
+    &-secondary-name {
+        background: $secondaryNavbarNameColor;
+        -webkit-background-clip: text;
+        background-clip: tex;
+        -webkit-text-fill-color: transparent;
     }
 }
 
