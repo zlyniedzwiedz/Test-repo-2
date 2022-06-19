@@ -24,3 +24,24 @@
             opacity: 1;
         }
     }
+
+    //Logo Animation//
+    @-webkit-keyframes in {
+        from {
+            -webkit-transform: translateY(50px) translateX(150px);
+        }
+
+        to {
+            -webkit-transform: translateY(60px) translateX(160px) scale(1.2);
+        }
+    }
+
+    @-webkit-keyframes out {
+        0% {
+            -webkit-transform: translateY(60px) translateX(160px) scale(1.2);
+        }
+
+        100% {
+            -webkit-transform: translateY(50px) translateX(150px);
+        }
+    }

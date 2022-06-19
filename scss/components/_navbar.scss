@@ -39,21 +39,24 @@
 
     }
 
-    &-logo {
+    &-logotype {
         display: flex;
         height: 200px;
+
+
     }
 
-    .logo {
+    // animated paw logo //
+    &-logo {
         position: relative;
         z-index: -2;
         width: 150px;
         height: 150px;
-        transform: translateY(50px) translateX(150px);
-    
+        transform: -webkit-animation: out 1s 1;
+
         &:hover {
-            transition-duration: 0.5s;
-            transform: translateY(50px) translateX(150px) scale(1.2);
+
+            transform: -webkit-animation: in 1s 1;
         }
 
     }
