@@ -42,3 +42,20 @@ const menu = document.querySelector(".hamburger");
 menu.addEventListener("click", () => {
   menu.classList.toggle("hamburger--active");
 });
+//menu click//
+function mobileMenu() {
+  if (document.getElementById("mobileMenu").style.display == "flex") {
+    document.getElementById("mobileMenu").style.display = "none";
+  } else {
+    document.getElementById("mobileMenu").style.display = "flex";
+  }
+}
+document.getElementById("menuicon").addEventListener("click", mobileMenu);
+
+function resetMenu() {
+  if (window.innerWidth >= 900) {
+    document.getElementById('mobileMenu').style.display = 'flex';
+  } else if (window.innerwidth < 900) {
+    document.getElementById('mobileMenu').style.display = 'none';
+  }
+  }

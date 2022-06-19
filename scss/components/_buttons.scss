@@ -93,13 +93,14 @@
 
 
 //hamburger//
-
 .hamburger {
+    position: fixed;
     margin: 0;
     padding: 0;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    z-index: 4;
 
     &:focus {
         &>.hamburger__container {
@@ -118,7 +119,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        width: 50px;
+        width: 35px;
         height: 30px;
     }
 
@@ -136,7 +137,7 @@
             width: 35px;
             height: 2px;
             background-color: #000;
-            content: '';
+            content: "";
         }
 
         &::before {
@@ -146,8 +147,7 @@
 
         &::after {
             bottom: -12px;
-            transition: bottom 100ms 250ms ease-in,
-                transform 220ms ease-in-out;
+            transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
         }
     }
 
@@ -164,8 +164,7 @@
             &::after {
                 bottom: 0;
                 transform: rotate(-90deg);
-                transition: bottom 100ms ease-out,
-                    transform 220ms 120ms ease-in-out;
+                transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
             }
         }
     }

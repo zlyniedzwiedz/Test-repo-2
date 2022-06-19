@@ -1,5 +1,5 @@
 //navbar as a whole
-#navbarmobile {
+#mobileMenu {
     display: none;
 }
 
@@ -63,10 +63,13 @@
         -webkit-animation: out 1s;
         animation: out 1s;
 
+
+
         &:hover {
             transform: translateY(60px) translateX(160px) scale(1.4);
             -webkit-animation: in 1s;
             animation: in 1s;
+            
 
         }
 
@@ -85,18 +88,22 @@
         display: none;
     }
 
-    #navbarmobile {
+    #mobileMenu {
         display: none;
-        height: max-content;
+        height: 50vh;
         float: left;
         width: max-content;
         padding: 0;
+        top: 4rem;
+        margin-left:0.3rem;
+       
 
 
 
 
 
         &-core {
+            display: flex;
             flex-direction: column;
 
         }

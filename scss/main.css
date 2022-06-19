@@ -15,7 +15,7 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbar-name {
-  background: linear-gradient(90deg, rgba(1, 79, 118, 0.7763480392), rgba(1, 112, 152, 0.3953956583), rgba(1, 79, 118, 0.7763480392), rgb(150, 150, 150) 100%);
+  background: linear-gradient(90deg, rgb(150, 150, 150), rgba(1, 112, 152, 0.3953956583), rgba(1, 79, 118, 0.7763480392), rgb(150, 150, 150) 100%);
   -webkit-background-clip: text;
   background-clip: tex;
   -webkit-text-fill-color: transparent;
@@ -66,7 +66,7 @@ a {
     color: rgba(255, 255, 255, 0.5137254902);
   }
 }
-#navbarmobile {
+#mobileMenu {
   display: none;
 }
 
@@ -125,34 +125,35 @@ a {
     display: none;
   }
 
-  #navbarmobile {
+  #mobileMenu {
     display: none;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: 50vh;
     float: left;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     padding: 0;
+    top: 4rem;
+    margin-left: 0.3rem;
   }
-  #navbarmobile-core {
+  #mobileMenu-core {
+    display: flex;
     flex-direction: column;
   }
-  #navbarmobile-logotype {
+  #mobileMenu-logotype {
     height: 100px;
   }
-  #navbarmobile-name {
+  #mobileMenu-name {
     font-size: 1em;
     position: absolute;
     padding-left: 10px;
     padding-top: 10px;
     left: 10%;
   }
-  #navbarmobile-logo {
+  #mobileMenu-logo {
     display: none;
   }
-  #navbarmobile .navbutton {
+  #mobileMenu .navbutton {
     font-size: 1em;
     text-align: left;
   }
@@ -231,11 +232,13 @@ a {
 }
 
 .hamburger {
+  position: fixed;
   margin: 0;
   padding: 0;
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  z-index: 4;
 }
 .hamburger:focus > .hamburger__container {
   box-shadow: 0 0 2px 2px #51a7e8;
@@ -247,7 +250,7 @@ a {
   display: flex;
   align-items: center;
   position: relative;
-  width: 50px;
+  width: 35px;
   height: 30px;
 }
 .hamburger__bars {
