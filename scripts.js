@@ -44,10 +44,10 @@ menu.addEventListener("click", () => {
 });
 //menu click//
 function mobileMenu() {
-  if (document.getElementById("mobileMenu").style.display == "flex") {
+  if (document.getElementById("mobileMenu").style.display == "block") {
     document.getElementById("mobileMenu").style.display = "none";
   } else {
-    document.getElementById("mobileMenu").style.display = "flex";
+    document.getElementById("mobileMenu").style.display = "block";
   }
 }
 document.getElementById("menuicon").addEventListener("click", mobileMenu);

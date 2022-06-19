@@ -94,13 +94,14 @@
 
 //hamburger//
 .hamburger {
-    position: fixed;
+    position: relative;
+    top: 2rem;
     margin: 0;
     padding: 0;
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    z-index: 4;
+    z-index: 999;
 
     &:focus {
         &>.hamburger__container {
@@ -136,7 +137,7 @@
             position: absolute;
             width: 35px;
             height: 2px;
-            background-color: #000;
+            background-color: rgb(255, 255, 255);
             content: "";
         }
 
@@ -170,28 +171,29 @@
     }
 }
 
+//mobile button
+.navbutton-mobile {
+    margin-top: 0.3rem;
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50px;
+
+
+
+}
+
 //hamburger show state//
 @media screen and (min-width: 900px) {
     .hamburger {
         display: none;
     }
 }
-//mobile button
- .navbutton-mobile {
-    margin-top: 0.3rem;
-     font-size: 10px;
-     text-align: center;
-     position: relative;
-     border: none;
-     padding: 15px 32px;
-     text-align: center;
-     text-decoration: none;
-     font-size: 24px;
-     transition-duration: 0.5s;
-     overflow: hidden;
-     cursor: pointer;
-     border-radius: 50px;
-
-
-
- }

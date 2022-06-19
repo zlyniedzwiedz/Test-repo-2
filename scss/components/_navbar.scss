@@ -45,7 +45,12 @@
 
     &-secondary-name {
         font-size: 36px;
+
     }
+
+
+
+
 
     &-logotype {
         display: flex;
@@ -53,6 +58,7 @@
 
 
     }
+
 
     // animated paw logo //
     &-logo {
@@ -84,36 +90,40 @@
 
 
 
-
 //navbar on mobile //
 @media screen and (max-width: 900px) {
     .navbar {
         display: none;
+
 
         &-element {
             border: 1px solid transparent;
             border-radius: 6px;
 
         }
-    }
 
-    #mobileMenu {
-        display: none;
-        position: fixed;
-        z-index: 4;
-        top: 2.3rem;
-    }
-
-    .navbar-mobile {
-        &-core {
-            display: flex;
-            top: 4rem;
-            flex-direction: column;
-            justify-content: space-around;
-
+        &-secondary-name-mobile {
+            font-size: 36px;
         }
+
+        #mobileMenu {
+            display: none;
+            position: fixed;
+            z-index: 4;
+            top: 2.3rem;
+        }
+
+        .navbar-mobile {
+            &-core {
+
+                top: 4rem;
+                flex-direction: column;
+                justify-content: space-around;
+
+            }
+        }
+
+
+
     }
-
-
-   
 }

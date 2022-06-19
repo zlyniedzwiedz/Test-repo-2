@@ -61,6 +61,13 @@ body {
         background-clip: tex;
         -webkit-text-fill-color: transparent;
     }
+
+    &-secondary-name-mobile {
+        background: $secondaryNavbarNameColor;
+        -webkit-background-clip: text;
+        background-clip: tex;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .navbutton {
@@ -75,6 +82,9 @@ body {
         background: $buttonHoverOnClick;
     }
 }
+
+
+
 
 .link-button {
     background-color: $buttonBackground;
@@ -96,7 +106,7 @@ a {
 
 @media screen and (max-width: 900px) {
 
-    .navbutton {
+    .navbutton-mobile {
         background-color: $buttonBackgroundMobile ;
         color: $primaryText;
 
