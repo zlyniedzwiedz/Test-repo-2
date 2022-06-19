@@ -123,7 +123,7 @@ a {
     height: 100px;
   }
   .navbar-name {
-    font-size: 1rem;
+    font-size: 1em;
     position: absolute;
     padding-left: 10px;
     padding-top: 10px;
