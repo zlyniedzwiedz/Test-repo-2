@@ -7,7 +7,7 @@
     width: 98%;
     height: 100px;
     padding: 15px;
-  
+
     border-radius: 10px;
     justify-content: space-between;
     margin-right: 5px;
@@ -29,7 +29,7 @@
         justify-content: space-around;
     }
 
-    //name/icon on the navbar //
+    //name/icon (logotype) on the navbar //
     &-name {
         position: absolute;
         font-size: 36px;
@@ -54,10 +54,12 @@
         height: 150px;
         transform: translateY(50px) translateX(150px);
         -webkit-animation: out 1s;
+        animation: in 1s;
 
         &:hover {
             transform: translateY(60px) translateX(160px) scale(1.4);
             -webkit-animation: in 1s;
+            animation: in 1s;
         }
 
     }
@@ -69,11 +71,11 @@
 
 
 
-//media on mobile //
+//navbar on mobile //
 @media screen and (max-width: 900px) {
     .navbar {
         display: flex;
-        height: 100%;
+        height: max-content;
         float: left;
         flex-direction: column;
         width: 25%;
@@ -88,24 +90,27 @@
 
         }
 
-        &-logo {
+        &-logotype {
             height: 100px;
         }
 
         &-name {
-            font-size: 1em;
-            position: static;
-            padding-left: 20px;
-            padding-top: 20px
+            font-size: 1rem;
+            position: absolute;
+            padding-left: 10px;
+            padding-top: 10px;
+            left: 10%;
+            
         }
 
-        .logo {
+        &-logo {
             display: none;
         }
 
         .navbutton {
-            font-size: 0.8em;
+            font-size: 1em;
             text-align: left;
+            
 
 
 

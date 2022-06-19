@@ -36,7 +36,27 @@
         }
     }
 
+    @keyframes in {
+        from {
+            -webkit-transform: translateY(50px) translateX(150px);
+        }
+
+        to {
+            -webkit-transform: translateY(60px) translateX(160px) scale(1.4);
+        }
+    }
+
     @-webkit-keyframes out {
+        0% {
+            -webkit-transform: translateY(60px) translateX(160px) scale(1.4);
+        }
+
+        100% {
+            -webkit-transform: translateY(50px) translateX(150px);
+        }
+    }
+
+    @keyframes out {
         0% {
             -webkit-transform: translateY(60px) translateX(160px) scale(1.4);
         }

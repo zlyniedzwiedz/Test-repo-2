@@ -8,6 +8,7 @@ $navbarName: #ffffffad;
 $backgroundImage: url(/images/bear-pawprint-svgrepo-com.svg);
 $footerText: #00aeff56;
 $footerBackground: #00aeff09;
+$buttonBackgroundMobile: rgba(0, 0, 0, 0);
 
 body {
     color: $primaryText;
@@ -48,6 +49,7 @@ body {
         background: $buttonHoverOnClick;
     }
 }
+
 .link-button {
     background-color: $buttonBackground;
     color: $primaryText;
@@ -66,3 +68,18 @@ a {
     background-color: $footerBackground
 }
 
+@media screen and (max-width: 900px) {
+
+    .navbutton {
+        background-color: $buttonBackgroundMobile ;
+        color: $primaryText;
+
+
+
+    }
+
+    .link-button {
+        background-color: $buttonBackgroundMobile ;
+        color: $primaryText;
+    }
+}
