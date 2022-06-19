@@ -1,15 +1,28 @@
 $primaryText: #ffffff83;
+
 $backgroundMain: rgba(85, 85, 85, 0.63);
+
 $backgroundElements: #000000;
+
 $buttonBackground: #0000002f;
+
 $buttonHover: #74747459;
+
 $buttonHoverOnClick: #589ab4;
+
 $navbarName: #ffffffad;
+
 $backgroundImage: url(/images/bear-pawprint-svgrepo-com.svg);
+
 $footerText: #00aeff56;
+
 $footerBackground: #00aeff09;
+
 $buttonBackgroundMobile: rgba(0, 0, 0, 0);
 
+// Primary Name on Navbar ( with gradient) //
+$primaryNavbarNameColor: linear-gradient(90deg, rgba(1, 79, 118, 0.7763480392156863), rgba(1, 112, 152, 0.39539565826330536), rgba(1, 79, 118, 0.7763480392156863), rgb(150, 150, 150) 100%);
+// Secondary Name on Navbar ( with gradient) //
 $secondaryNavbarNameColor: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgb(0, 0, 0) 25%, rgba(1, 79, 118, 0.7763480392156863) 41%,
         rgba(1, 112, 152, 0.39539565826330536) 71%, rgb(150, 150, 150) 100%);
 
@@ -36,7 +49,10 @@ body {
 
     //color of the name //
     &-name {
-        color: $navbarName;
+        background: $primaryNavbarNameColor;
+        -webkit-background-clip: text;
+        background-clip: tex;
+        -webkit-text-fill-color: transparent;
     }
 
     &-secondary-name {
