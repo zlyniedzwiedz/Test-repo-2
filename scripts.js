@@ -54,8 +54,8 @@ document.getElementById("menuicon").addEventListener("click", mobileMenu);
 
 function resetMenu() {
   if (window.innerWidth >= 900) {
-    document.getElementById('mobileMenu').style.display = 'flex';
+    document.getElementById("mobileMenu").style.display = "block";
   } else if (window.innerwidth < 900) {
-    document.getElementById('mobileMenu').style.display = 'none';
+    document.getElementById("mobileMenu").style.display = "none";
   }
-  }
+}

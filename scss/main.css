@@ -57,12 +57,12 @@ a {
 
 @media screen and (max-width: 900px) {
   .navbutton {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: rgba(255, 255, 255, 0.5137254902);
   }
 
   .link-button {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: rgba(255, 255, 255, 0.5137254902);
   }
 }
@@ -124,38 +124,23 @@ a {
   .navbar {
     display: none;
   }
+  .navbar-element {
+    border: 1px solid transparent;
+    border-radius: 6px;
+  }
 
   #mobileMenu {
     display: none;
-    height: 50vh;
-    float: left;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    padding: 0;
-    top: 4rem;
-    margin-left: 0.3rem;
+    position: fixed;
+    z-index: 4;
+    top: 2.3rem;
   }
-  #mobileMenu-core {
+
+  .navbar-mobile-core {
     display: flex;
+    top: 4rem;
     flex-direction: column;
-  }
-  #mobileMenu-logotype {
-    height: 100px;
-  }
-  #mobileMenu-name {
-    font-size: 1em;
-    position: absolute;
-    padding-left: 10px;
-    padding-top: 10px;
-    left: 10%;
-  }
-  #mobileMenu-logo {
-    display: none;
-  }
-  #mobileMenu .navbutton {
-    font-size: 1em;
-    text-align: left;
+    justify-content: space-around;
   }
 }
 .navbutton {
@@ -295,6 +280,22 @@ a {
     display: none;
   }
 }
+.navbutton-mobile {
+  margin-top: 0.3rem;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
 body {
   display: flex;
   font-family: "Montserrat", sans-serif;
@@ -309,7 +310,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   padding: 5%;
-  z-index: 1;
+  z-index: 0;
   background-image: url(/images/bear-pawprint-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-size: 350px;
@@ -365,7 +366,7 @@ body {
 
 @media screen and (max-width: 900px) {
   body {
-    width: 100vw;
+    width: 100%;
   }
 
   .main {

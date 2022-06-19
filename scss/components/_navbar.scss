@@ -65,11 +65,13 @@
 
 
 
+
         &:hover {
             transform: translateY(60px) translateX(160px) scale(1.4);
             -webkit-animation: in 1s;
             animation: in 1s;
-            
+
+
 
         }
 
@@ -86,57 +88,31 @@
 @media screen and (max-width: 900px) {
     .navbar {
         display: none;
+
+        &-element {
+            border: 1px solid transparent;
+            border-radius: 6px;
+
+        }
     }
 
     #mobileMenu {
         display: none;
-        height: 50vh;
-        float: left;
-        width: max-content;
-        padding: 0;
-        top: 4rem;
-        margin-left:0.3rem;
-       
+        position: fixed;
+        z-index: 4;
+        top: 2.3rem;
+    }
 
-
-
-
-
+    .navbar-mobile {
         &-core {
             display: flex;
+            top: 4rem;
             flex-direction: column;
-
-        }
-
-        &-logotype {
-            height: 100px;
-        }
-
-        &-name {
-            font-size: 1em;
-            position: absolute;
-            padding-left: 10px;
-            padding-top: 10px;
-            left: 10%;
-
-        }
-
-        &-logo {
-            display: none;
-        }
-
-        .navbutton {
-            font-size: 1em;
-            text-align: left;
-
-
-
+            justify-content: space-around;
 
         }
     }
 
 
-
-
-
+   
 }
