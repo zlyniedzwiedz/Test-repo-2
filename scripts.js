@@ -35,3 +35,10 @@ function shw_page(new_page) {
 
   old_page = new_page;
 }
+
+//hamburger//
+const menu = document.querySelector(".hamburger");
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle("hamburger--active");
+});

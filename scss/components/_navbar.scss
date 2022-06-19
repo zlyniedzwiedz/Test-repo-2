@@ -1,4 +1,7 @@
 //navbar as a whole
+#navbarmobile {
+    display: none;
+}
 
 .navbar {
     position: fixed;
@@ -54,12 +57,13 @@
         height: 150px;
         transform: translateY(50px) translateX(150px);
         -webkit-animation: out 1s;
-        animation: in 1s;
+        animation: out 1s;
 
         &:hover {
             transform: translateY(60px) translateX(160px) scale(1.4);
             -webkit-animation: in 1s;
             animation: in 1s;
+
         }
 
     }
@@ -74,13 +78,16 @@
 //navbar on mobile //
 @media screen and (max-width: 900px) {
     .navbar {
-        display: flex;
+        display: none;
+    }
+
+    #navbarmobile {
+        display: none;
         height: max-content;
         float: left;
-        flex-direction: column;
-        width: 25%;
+        width: max-content;
         padding: 0;
-        justify-content: flex-start;
+
 
 
 
@@ -100,7 +107,7 @@
             padding-left: 10px;
             padding-top: 10px;
             left: 10%;
-            
+
         }
 
         &-logo {
@@ -110,7 +117,7 @@
         .navbutton {
             font-size: 1em;
             text-align: left;
-            
+
 
 
 

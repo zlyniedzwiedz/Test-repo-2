@@ -16,7 +16,14 @@
 
 <body onload="init()">
 
-    <nav class="navbar">
+
+    <button class="hamburger" aria-label="Menu">
+        <span class="hamburger__container" tabindex="-1">
+            <span class="hamburger__bars"></span>
+        </span>
+    </button>
+
+    <nav class="navbar" id="navbar">
         <div class="navbar-logotype">
             <img class="navbar-logo" src="/images/bear-pawprint-svgrepo-com.svg" alt="lapa">
             <h2 class="navbar-name">Michał Raszczyk</h2>
@@ -33,6 +40,24 @@
             </div>
         </div>
     </nav>
+    <nav class="navbar" id="navbarmobile">
+        <div class="navbar-logotype">
+            <img class="navbar-logo" src="/images/bear-pawprint-svgrepo-com.svg" alt="lapa">
+            <h2 class="navbar-name">Michał Raszczyk</h2>
+        </div>
+        <div class="navbar-core">
+            <div class="navbar-element"><button class="navbutton" type="button" onclick="shw_page('home')">Home</button>
+            </div>
+            <div class="navbar-element"><button class="navbutton" type="button" onclick="shw_page('about')"> O mnie
+                </button></div>
+            <div class="navbar-element"><button class="navbutton" type="button" onclick="shw_page('skills')">Zestaw
+                    umiejętności</button></div>
+            <div class="navbar-element"><button class="navbutton" type="button"
+                    onclick="shw_page('contact')">Kontakt</button>
+            </div>
+        </div>
+    </nav>
+
 
 
 
