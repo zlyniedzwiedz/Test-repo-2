@@ -52,11 +52,12 @@
         z-index: -2;
         width: 150px;
         height: 150px;
-        transform: -webkit-animation: out 1s 1;
+        transform: translateY(50px) translateX(150px);
+        -webkit-animation: out 1s;
 
         &:hover {
-
-            transform: -webkit-animation: in 1s 1;
+            transform: translateY(60px) translateX(160px) scale(1.4);
+            -webkit-animation: in 1s;
         }
 
     }

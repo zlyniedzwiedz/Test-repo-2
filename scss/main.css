@@ -85,11 +85,11 @@ a {
   width: 150px;
   height: 150px;
   transform: translateY(50px) translateX(150px);
-  -webkit-animation: out 1s 1;
+  -webkit-animation: out 1s;
 }
 .navbar-logo:hover {
-  transform: translateY(60px) translateX(160px) scale(1.2);
-  -webkit-animation: in 1s 1;
+  transform: translateY(60px) translateX(160px) scale(1.4);
+  -webkit-animation: in 1s;
 }
 
 @media screen and (max-width: 900px) {
@@ -316,12 +316,12 @@ body {
     -webkit-transform: translateY(50px) translateX(150px);
   }
   to {
-    -webkit-transform: translateY(60px) translateX(160px) scale(1.2);
+    -webkit-transform: translateY(60px) translateX(160px) scale(1.4);
   }
 }
 @-webkit-keyframes out {
   0% {
-    -webkit-transform: translateY(60px) translateX(160px) scale(1.2);
+    -webkit-transform: translateY(60px) translateX(160px) scale(1.4);
   }
   100% {
     -webkit-transform: translateY(50px) translateX(150px);
