@@ -1,23 +1,19 @@
 body {
-    display: flex;
+
 
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 
 
+
 }
 
 // Main content //
 .main {
-    position: absolute;
-    display: flex;
+    position: relative;
     margin-top: 150px;
-    flex-direction: column;
-
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 5%;
+    height: max-content;
     z-index: 0;
     background-image: $backgroundImage;
     background-repeat: no-repeat;
@@ -28,9 +24,11 @@ body {
 
 
     &-content {
-        margin-left: 50px;
-        font-size: 1.5rem;
-        width: 100%;
+
+        font-size: 1.6rem;
+        position: relative;
+        margin: 2vw;
+
 
 
 
@@ -85,9 +83,15 @@ body {
 
 }
 
+
+.skills-list {
+    text-align: center;
+}
+
 .skills-list-element {
     list-style-type: none;
     font-size: 28px;
+
 
 }
 
@@ -96,6 +100,7 @@ body {
     color: rgb(241, 241, 210);
 
 }
+
 
 
 
