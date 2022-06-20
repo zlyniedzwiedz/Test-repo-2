@@ -4,6 +4,7 @@ body {
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    
 
 
 
@@ -13,7 +14,7 @@ body {
 .main {
     position: relative;
     margin-top: 150px;
-    height: 100vh;
+    height: 80vh;
     z-index: 0;
     background-image: $backgroundImage;
     background-repeat: no-repeat;
@@ -63,7 +64,7 @@ body {
     bottom: 5px;
     position: fixed;
     text-align: center;
-
+   
 
 
 }
@@ -71,7 +72,6 @@ body {
 // contact//
 .contact-link {
     text-decoration: none;
-  
 
 }
 
@@ -80,7 +80,6 @@ body {
     list-style: none;
     font-size: 30px;
     text-align: center;
-    height: 100vh;
 
     //skills list//
 
@@ -89,7 +88,6 @@ body {
 
 .skills-list {
     text-align: center;
-    height: 100vh;
 }
 
 .skills-list-element {
@@ -113,8 +111,7 @@ body {
 
 @media screen and (max-width: 900px) {
     body {
-        width: 100vw;
-        margin-left: -5px;
+        width: 100%;
     }
 
     .main {
@@ -122,8 +119,7 @@ body {
         text-align: left;
         max-width: 100vw;
         margin-left: 0.5vw;
-        margin-right: 0.5vw;
-        margin-top: 0.1vh;
+        margin-top: 0.5vh;
         top: 5rem;
 
 

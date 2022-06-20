@@ -65,13 +65,13 @@ body {
     &-secondary-name-mobile {
         background: $secondaryNavbarNameColor;
         -webkit-background-clip: text;
-        background-clip: tex;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
 
 .navbutton {
-    background-color: $buttonBackground ;
+    background: $buttonBackground ;
     color: $primaryText;
 
     &:hover {

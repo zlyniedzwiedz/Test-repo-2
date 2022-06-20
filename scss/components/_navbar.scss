@@ -13,7 +13,7 @@
     top: 3px;
 
     border-radius: 10px;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-right: 5px;
     align-items: center;
     z-index: 3;
@@ -110,14 +110,14 @@
 
         #mobileMenu {
             display: none;
-            position: fixed;
+            position: absolute;
             z-index: 4;
             top: 2.3rem;
         }
 
         .navbar-mobile {
             &-core {
-
+                position: relative;
                 top: 4rem;
                 flex-direction: column;
                 justify-content: space-around;
@@ -131,8 +131,10 @@
 }
 
 #mobile-name {
-    font-size: 24px;
+
+    font-size: 32px;
     position: absolute;
-    left: 5vw;
-    transform: translatey(-10vw) translateX(20vw) rotate(15deg);
+    top: 10px;
+    left: 10px;
+    transform: translatey(-10vw) translateX(10vw) rotate(15deg);
 }

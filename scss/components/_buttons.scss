@@ -173,20 +173,21 @@
 
 //mobile button
 .navbutton-mobile {
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
     font-size: 10px;
     text-align: center;
     position: relative;
     border: none;
-    padding: 15px 32px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 10px;
     transition-duration: 0.5s;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 50px;
-
+    border-radius: 4px;
+    transform: translatey(40px) translateX(5vw);
+  
 
 
 }
