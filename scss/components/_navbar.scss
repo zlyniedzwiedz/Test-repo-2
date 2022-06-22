@@ -13,7 +13,7 @@
     top: 3px;
 
     border-radius: 10px;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-right: 5px;
     align-items: center;
     z-index: 3;
@@ -69,16 +69,14 @@
         width: 150px;
         height: 150px;
         transform: translateY(50px) translateX(150px);
-        -webkit-animation: out 1s;
-        animation: out 1s;
+        transition: 1s all ease;
 
 
 
 
         &:hover {
             transform: translateY(60px) translateX(160px) scale(1.4);
-            -webkit-animation: in 1s;
-            animation: in 1s;
+
 
 
 
