@@ -65,3 +65,66 @@
             -webkit-transform: translateY(50px) translateX(150px);
         }
     }
+
+    //not used//
+    @keyframes fadeInFromLeft {
+        0% {
+            transform: translateX(-2000px) scale(0.6);
+            opacity: 0.7;
+        }
+
+        80% {
+            transform: translateX(50px) scale(0.7);
+            opacity: 0.7;
+        }
+
+        to {
+            transform: translateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    //not used//
+    @keyframes fadeInFromRight {
+        0% {
+            transform: translatey(5000px) scale(0.6);
+            opacity: 0.7;
+        }
+
+        80% {
+            transform: translatey(-50px) scale(0.7);
+            opacity: 0.7;
+        }
+
+        to {
+            transform: translatey(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    //do uzyciia//
+    .fadeInFromLeft {
+        animation-duration: 1000ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-delay: none;
+    }
+
+    .fadeInFromRight {
+        animation-duration: 1000ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-delay: 600ms;
+    }
+
+    .fadeInFromLeft {
+        animation-name: fadeInFromLeft;
+    }
+
+    .fadeInFromRight {
+        animation-name: fadeInFromRight;
+    }
+
+    //...//
