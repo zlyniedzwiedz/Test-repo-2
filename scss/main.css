@@ -561,8 +561,6 @@ body {
           animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-delay: none;
-          animation-delay: none;
 }
 
 .fadeInFromBottom {
