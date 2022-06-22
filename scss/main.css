@@ -34,7 +34,7 @@ body {
 }
 
 .navbutton {
-  background: rgba(0, 0, 0, 0.1843137255);
+  background: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0.5137254902);
 }
 .navbutton:hover {
@@ -45,7 +45,7 @@ body {
 }
 
 .link-button {
-  background-color: rgba(0, 0, 0, 0.1843137255);
+  background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0.5137254902);
 }
 .link-button:hover {
