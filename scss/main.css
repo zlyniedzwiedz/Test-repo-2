@@ -26,6 +26,9 @@ body {
   background-clip: tex;
   -webkit-text-fill-color: transparent;
 }
+.navbar-secondary-name:after {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 8%, rgb(0, 0, 0) 25%, rgba(1, 79, 118, 0.7763480392) 41%, rgba(1, 112, 152, 0.3953956583) 71%, rgb(150, 150, 150) 100%);
+}
 .navbar-secondary-name-mobile {
   background: linear-gradient(90deg, rgb(2, 0, 36) 8%, rgb(0, 0, 0) 25%, rgba(1, 79, 118, 0.7763480392) 41%, rgba(1, 112, 152, 0.3953956583) 71%, rgb(150, 150, 150) 100%);
   -webkit-background-clip: text;
@@ -106,7 +109,21 @@ a {
   transform: rotate(15deg) scale(1.5) translateX(10px);
 }
 .navbar-secondary-name {
+  position: relative;
   font-size: 2rem;
+}
+.navbar-secondary-name:after {
+  content: "";
+  width: 0;
+  height: 4px;
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  transition: width 0.5s, left 0.5s;
+}
+.navbar-secondary-name:hover::after {
+  width: 100%;
+  left: 0;
 }
 .navbar-logotype {
   display: flex;
