@@ -80,13 +80,13 @@ a {
   position: fixed;
   display: flex;
   flex-direction: row;
-  width: 98%;
-  height: 100px;
-  padding: 15px;
-  top: 3px;
-  border-radius: 10px;
+  width: 95vw;
+  height: 10vh;
+  padding: 1%;
+  top: 1.5vh;
+  left: 1.5vw;
+  border-radius: 4px 200px 200px 4px;
   justify-content: space-between;
-  margin-right: 5px;
   align-items: center;
   z-index: 3;
 }
@@ -100,13 +100,13 @@ a {
 }
 .navbar-name {
   position: absolute;
-  font-size: 36px;
+  font-size: 2rem;
   padding-left: 50px;
   padding-top: 50px;
   transform: rotate(15deg) scale(1.5) translateX(10px);
 }
 .navbar-secondary-name {
-  font-size: 36px;
+  font-size: 2rem;
 }
 .navbar-logotype {
   display: flex;
@@ -124,7 +124,7 @@ a {
   transform: translateY(60px) translateX(160px) scale(1.4);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
   .navbar {
     display: none;
   }
@@ -147,15 +147,20 @@ a {
     flex-direction: column;
     justify-content: space-around;
   }
-}
-#mobile-name {
-  font-size: 32px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  transform: translatey(-10vw) translateX(10vw) rotate(15deg);
-}
 
+  #mobile-name {
+    font-size: 2rem;
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+    transform: translate(10vw, -10vw) rotate(15deg);
+  }
+}
+@media screen and (max-width: 1599px) {
+  .navbar-secondary-name {
+    display: none;
+  }
+}
 .navbutton {
   position: relative;
   border: none;
@@ -318,8 +323,8 @@ body {
 
 .main {
   position: relative;
-  margin-top: 150px;
-  height: 80vh;
+  margin-top: 25vh;
+  height: 100vh;
   z-index: 0;
   background-image: url(/images/bear-pawprint-svgrepo-com.svg);
   background-repeat: no-repeat;
@@ -330,6 +335,7 @@ body {
   font-size: 1.6rem;
   position: relative;
   margin: 2vw;
+  padding-bottom: 10vh;
 }
 .main-header {
   font-size: 2rem;
@@ -350,7 +356,8 @@ body {
 
 .footer {
   width: 80vw;
-  bottom: 5px;
+  height: 1vh;
+  bottom: 1vh;
   position: fixed;
   text-align: center;
 }

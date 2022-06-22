@@ -4,7 +4,7 @@ body {
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    
+
 
 
 
@@ -13,8 +13,8 @@ body {
 // Main content //
 .main {
     position: relative;
-    margin-top: 150px;
-    height: 80vh;
+    margin-top: 25vh;
+    height: 100vh;
     z-index: 0;
     background-image: $backgroundImage;
     background-repeat: no-repeat;
@@ -29,7 +29,8 @@ body {
         font-size: 1.6rem;
         position: relative;
         margin: 2vw;
-
+        padding-bottom: 10vh;
+       
 
 
 
@@ -45,6 +46,9 @@ body {
 
 // scroll script classes//
 .reveal {
+    //hidden//
+    // display: none;
+    //..//
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -61,10 +65,11 @@ body {
 
 .footer {
     width: 80vw;
-    bottom: 5px;
+    height: 1vh;
+    bottom: 1vh;
     position: fixed;
     text-align: center;
-   
+
 
 
 }
