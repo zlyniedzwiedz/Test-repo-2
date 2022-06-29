@@ -7,6 +7,14 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#coverup {
+  background: #232526;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #414345, #232526);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .navbar {
   background: #000000;
   /* fallback for old browsers */
@@ -88,10 +96,10 @@ a {
   padding: 1%;
   top: 1.5vh;
   left: 1.5vw;
+  z-index: 3;
   border-radius: 4px 200px 200px 4px;
   justify-content: space-between;
   align-items: center;
-  z-index: 3;
 }
 .navbar-element {
   border: 1px solid transparent;
@@ -338,9 +346,20 @@ body {
   font-weight: 400;
 }
 
+#coverup {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 11.5%;
+  padding: 1%;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+
 .main {
   position: relative;
-  margin-top: 25vh;
+  margin-top: 20vh;
   height: 100vh;
   z-index: 0;
   background-image: url(/images/bear-pawprint-svgrepo-com.svg);
